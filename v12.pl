@@ -5,8 +5,8 @@ $ENV{'PATH'} = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin';
 
 
 use Getopt::Long;
-#use Term::ANSIColor qw(:constants);
-#use Term::ANSIColor;
+use Term::ANSIColor qw(:constants);
+use Term::ANSIColor;
 
 ## OPTIONS ##
 

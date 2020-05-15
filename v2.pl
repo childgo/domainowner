@@ -1,12 +1,5 @@
 #!/usr/bin/perl
 
-use warnings;
-use Sys::Hostname;
-use Getopt::Long;
-use Term::ANSIColor qw(:constants);
-use POSIX;
-use File::Find;
-use Term::ANSIColor;
 
 $ENV{'PATH'} = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin';
 
@@ -35,14 +28,12 @@ GetOptions(
 
 if ($domain)
 {
-## --domain{
 domain_exist();
-
 }
 
-else{    
-## No options passed.
-print_normal("There are currently $queue_cnt messages in the Exim queue.\n");
+else
+{    
+print_normal("Please choose something.\n");
 }
 
 ## Colors ##
@@ -70,7 +61,6 @@ sub print_normal {
 
 
 ### DOMAIN CHEX ###
-
 sub domain_exist {
     open( USERDOMAINS, "/etc/userdomains" );
     while (<USERDOMAINS>) {

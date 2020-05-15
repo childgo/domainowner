@@ -1,6 +1,5 @@
 
 #!/usr/bin/perl
-$ENV{'PATH'} = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin';
 
 
 use warnings;
@@ -24,7 +23,8 @@ GetOptions(
     'email:s'      => \$email,
     'blacklists:s' => \$blacklists,
     'help'         => \$help
-) or die("Please see --help\n");
+)
+or die("Please see --help\n");
 
 ## GLOBALS ##
 

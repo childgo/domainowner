@@ -73,7 +73,7 @@ sub domain_exist {
         if (/^$domain: (\S+)/i) {
             my $user = $1;
             print_info("\n[INFO] *");
-            print_normal(" The domain $domain is owned by $user.\n");
+            print_normal(" The domain $domain is owned by $user \n");
             my $suspchk = "/var/cpanel/suspended/$user";
             if ( -e $suspchk ) {
                 print_warning("[WARN] * The user $user is SUSPENDED.\n");

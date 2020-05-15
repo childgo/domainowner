@@ -251,5 +251,3 @@ sub get_doc_root {
       
 
 
-    }
-}

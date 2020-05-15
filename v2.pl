@@ -217,7 +217,7 @@ sub domain_exist {
         
 
 
-}
+
 
 sub get_doc_root {
     my ( $user, $domain ) = $email =~ /(.*)@(.*)/;

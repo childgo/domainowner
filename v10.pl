@@ -3,9 +3,8 @@
 $ENV{'PATH'} = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin';
 
 
-#use warnings;
-#use Sys::Hostname;
-use Getopt::Long;
+
+#use Getopt::Long;
 use Term::ANSIColor qw(:constants);
 use Term::ANSIColor;
 

@@ -31,19 +31,18 @@ GetOptions(
 
 
 
-## GUTS ##
 
-if ($domain) {    ## --domain{
 
-    domain_exist();
+if ($domain)
+{
+## --domain{
+domain_exist();
 
 }
 
-else {    ## No options passed.
-
-    print_normal(
-        "There are currently $queue_cnt messages in the Exim queue.\n");
-
+else{    
+## No options passed.
+print_normal("There are currently $queue_cnt messages in the Exim queue.\n");
 }
 
 ## Colors ##
@@ -71,14 +70,6 @@ sub print_normal {
 
 
 ### DOMAIN CHEX ###
-
-sub hostname_check {
-    if ( $hostname eq $domain ) {
-        print_warning(
-"[WARN] * Your hostname $hostname appears to be the same as $domain.  Was this intentional?\n"
-        );
-    }
-}
 
 sub domain_exist {
     open( USERDOMAINS, "/etc/userdomains" );

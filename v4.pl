@@ -1,14 +1,5 @@
 
 #!/usr/bin/perl
-
-use warnings;
-use Sys::Hostname;
-use Getopt::Long;
-use Term::ANSIColor qw(:constants);
-use POSIX;
-use File::Find;
-use Term::ANSIColor;
-
 $ENV{'PATH'} = '/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin';
 
 ## OPTIONS ##
